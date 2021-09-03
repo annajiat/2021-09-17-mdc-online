@@ -350,6 +350,7 @@ rows to the table if you wish to break down the schedule
 further. To use this custom schedule here, replace the block
 of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
+`{% include dc/schedule.html %}`
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
@@ -357,7 +358,7 @@ of code below the Schedule `<h2>` header below with
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
+{% include custom-schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "pilot" %}
